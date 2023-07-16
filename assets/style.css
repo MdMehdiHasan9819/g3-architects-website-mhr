@@ -1,8 +1,93 @@
-
-
+/* common css */
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 body{
 font-family: 'Lato', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Work Sans', sans-serif;
+}
+.btn-primary{
+    border-radius: 8px;
+    background-color: #FF900E;
+    padding: 1.2rem 1.5rem;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.img-fluid{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* main css */
+/* header css start now */
+header{
+    background-color:rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+.nav-link >ul ,a{
+    display: flex;
+    text-decoration: none;
+    color:  #424242;
+
+}
+.nav-link ul >li{
+    list-style: none;
+    margin-right: 30px;
+    color:  #424242;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.nav-logo >h1{
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* banner section css */
+/* .banner-head{
+    padding: 50px 240px;
+} */
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.banner-description{
+    color:  #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.banner-head img{
+    margin-top: 20px;
+}
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+    
+
+
+
 }
