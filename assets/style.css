@@ -30,10 +30,10 @@ font-family: 'Work Sans', sans-serif;
 
 /* main css */
 /* header css start now */
-header{
-    background-color:rgba(255, 144, 14, 0.10);
-    padding: 50px 240px;
-}
+    header{
+        background-color:rgba(255, 144, 14, 0.10);
+        padding: 50px 240px;
+    }
 .nav-header{
     display: flex;
     justify-content: space-between;
@@ -85,9 +85,32 @@ header{
 }
 
 /* responsive media query */
+
+        /* mobile device media query */
+
 @media screen and (max-width:576px) {
     
-
-
-
+    header{
+        padding: 10px 40px;
+    }
+    .nav-header{
+        flex-direction: column;
+    }
+    .nav-link >ul ,a{
+        margin-top: 15px;
+    }
 }
+
+    /* tablet or medium device media query */
+
+        @media screen and (min-width:577px) and (max-width:960px) {
+            header{
+                padding: 10px 40px;
+            }
+            .nav-header{
+                flex-direction: column;
+            }
+            .nav-link >ul ,a{
+                margin-top: 15px;
+            }
+        }
