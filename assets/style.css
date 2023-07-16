@@ -1,4 +1,10 @@
 /* common css */
+.container{
+    /* background-color: red; */
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -25,6 +31,7 @@ font-family: 'Work Sans', sans-serif;
     width: 100%;
     height: 100%;
 }
+
 
 
 
@@ -60,9 +67,6 @@ font-family: 'Work Sans', sans-serif;
 }
 
 /* banner section css */
-/* .banner-head{
-    padding: 50px 240px;
-} */
 .banner-content{
     max-width: 800px;
     text-align: center;
@@ -84,6 +88,48 @@ font-family: 'Work Sans', sans-serif;
     margin-top: 20px;
 }
 
+/* teams section css start now */
+    .teams-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 4rem;
+        margin-top: 4.5rem;
+        margin-bottom: 5rem;
+    }
+    .teams-img-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+        margin-left: 8rem;
+    }
+    
+    .team-title{
+        color: #727272;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    .of-our{
+        color: #131313;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .features{
+        color: #FF900E;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .teams-description{
+        color:  #727272;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .teams-header{
+        padding-left: 30px;
+        padding-right: 70px;
+    }
 /* responsive media query */
 
         /* mobile device media query */
@@ -99,6 +145,25 @@ font-family: 'Work Sans', sans-serif;
     .nav-link >ul ,a{
         margin-top: 15px;
     }
+    /* teams section media query */
+    .teams-container{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .teams-img-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+        .teams-header{
+            text-align: center;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
 }
 
     /* tablet or medium device media query */
@@ -112,5 +177,20 @@ font-family: 'Work Sans', sans-serif;
             }
             .nav-link >ul ,a{
                 margin-top: 15px;
+            }
+            /* teams section media query */
+            .teams-container{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .teams-img-container{
+                gap: 1.5rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            .teams-header{
+                text-align: center;
+                padding-left: 30px;
+                padding-right: 30px;
             }
         }
