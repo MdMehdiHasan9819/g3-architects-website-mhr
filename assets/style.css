@@ -130,6 +130,54 @@ font-family: 'Work Sans', sans-serif;
         padding-left: 30px;
         padding-right: 70px;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* facts css start now */
+    .card{
+        width: 13rem;
+        height: 13rem;
+        border-radius: 8px;
+        border: 1px solid #FF900E;
+        text-align: center;
+    }
+    .facts-card-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1rem;
+    }
+    .facts-container>h3{
+        color: var(--dark-01, #131313);
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+    }
+    .facts-container>p{
+        color:  #727272;
+        font-size: 1rem;
+        font-weight: 400;
+        width: 500px;
+        padding-left: 1rem;
+    }
+    .facts-card-container{
+            margin-top: 5rem;
+            padding-right: 5rem;
+            padding-left: 8rem;
+    }
 /* responsive media query */
 
         /* mobile device media query */
@@ -164,6 +212,21 @@ font-family: 'Work Sans', sans-serif;
             padding-right: 30px;
         }
 
+        /* facts media query */
+        .facts-card-container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        
+        }
+        .facts-card-container{
+            margin-top: 5rem;
+            padding-right: 1rem;
+            padding-left: 1.5rem;
+    }
+            .facts-container>h3,p{
+                text-align: center;
+            }
+
 }
 
     /* tablet or medium device media query */
@@ -193,4 +256,26 @@ font-family: 'Work Sans', sans-serif;
                 padding-left: 30px;
                 padding-right: 30px;
             }
+
+            /* facts media query css */
+            .card{
+                width: 21rem;
+                height: 21rem;
+                border-radius: 8px;
+                border: 1px solid #FF900E;
+                text-align: center;
+            }
+            .facts-card-container{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 1rem;
+            }
+
+            .facts-card-container{
+                margin-top: 5rem;
+                padding-right: 5rem;
+                padding-left: 5rem;
         }
+
+
+}
