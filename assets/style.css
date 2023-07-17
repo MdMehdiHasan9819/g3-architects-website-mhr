@@ -101,7 +101,7 @@ font-family: 'Work Sans', sans-serif;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 1.5rem;
-        margin-left: 8rem;
+        /* margin-left: 8rem; */
     }
     
     .team-title{
@@ -131,10 +131,33 @@ font-family: 'Work Sans', sans-serif;
         padding-right: 70px;
     }
 
-
-
-
-
+            /* sponsor section css */
+            .sponsor-logo{
+                display: grid;
+                grid-template-columns: repeat(5,1fr);
+            }
+                .our-sponsor-container{
+                   margin-top: 100px;
+                   margin-bottom: 100px;
+                   text-align: center;
+                }
+            .logo{
+                width: 153.333px;
+                height: 50px;
+            }
+            .sponsor-header{
+                color:  #131313;
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+            .sponsor-description{
+                color:  #727272;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 400;
+                margin-bottom: 100px;
+            }
 
 
 
@@ -170,7 +193,6 @@ font-family: 'Work Sans', sans-serif;
         color:  #727272;
         font-size: 1rem;
         font-weight: 400;
-        width: 500px;
         padding-left: 1rem;
     }
     .facts-card-container{
@@ -226,7 +248,17 @@ font-family: 'Work Sans', sans-serif;
             .facts-container>h3,p{
                 text-align: center;
             }
+                /* sponsor-media query css */
+                .sponsor-logo{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 50px;
+                }
 
+                .logo{
+                    width: 90%;
+                    height: 50px;
+                }
 }
 
     /* tablet or medium device media query */
@@ -275,6 +307,17 @@ font-family: 'Work Sans', sans-serif;
                 margin-top: 5rem;
                 padding-right: 5rem;
                 padding-left: 5rem;
+        }
+
+        .sponsor-logo{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+
+        .logo{
+            width: auto;
+            height: 50px;
         }
 
 
